@@ -27,7 +27,7 @@ object AWSGlueTest1 {
       val staticData = sparkSession.read          // read() returns type DataFrameReader
         .format("json")
         .option("header", "true")
-        .load("s3://yext-integration-history-entities/json/")  // load() returns a DataFrame
+        .load(???)  // Replace ??? with the location to read data from 
 
       staticData.show()
 //      val datasource0 = sparkSession.readStream   // readstream() returns type DataStreamReader
